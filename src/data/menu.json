@@ -1,0 +1,20 @@
+{
+    "data": {
+        "menuone": {
+            "one": "首页",
+            "children": ""
+        },
+        "menutwo": {
+            "one": "关于",
+            "children": ""
+        },
+        "menuthree": {
+            "one": "echarts",
+            "children": ""
+        },
+        "menufour": {
+            "one": "wangEditor",
+            "children": ""
+        }
+    }
+}

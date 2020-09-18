@@ -1,0 +1,133 @@
+/*=======
+ * 基本默认值
+  =======*/
+
+html {
+	font-size: 62.5%;
+	color: #222;
+}
+
+::selection {
+	background-color: #b3d4fc;
+	text-shadow: none;
+}
+
+ul,li,p {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+form,
+a,
+p,
+textarea,
+hr {
+	font-family: "Microsoft Yahei", Arial;
+}
+
+.overall {
+	max-width: 1200px;
+	width: 100%;
+	display: inline-block;
+}
+
+
+/*=======
+ * 工具样式
+  =======*/
+
+.conter-block {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.show {
+	display: block!important;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.text-hide {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+/*清除浮动兼容IE6~IE67*/
+
+.cleatfix {
+	zoom: 1;
+}
+
+
+/*=======
+ * 浏览器更新
+  =======*/
+
+.browserupgrade {
+	margin: 0;
+	padding: 1rem;
+	background: #ccc;
+}
