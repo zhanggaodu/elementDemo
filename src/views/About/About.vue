@@ -256,7 +256,6 @@ export default {
           params[question.id] = question.data;
         }
       }
-      // console.log(data[0]);
       console.log(params);
     }
   }
