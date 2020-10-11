@@ -4,10 +4,10 @@
       <img src="../../assets/image/logo.png" alt>
       <ul>
         <li>
-          <router-link to="/">页面一</router-link>
+          <router-link to="/">图表</router-link>
         </li>
         <li>
-          <router-link to="/about">页面二</router-link>
+          <router-link to="/about">题库</router-link>
         </li>
         <li>
           <router-link to="/">页面三</router-link>
@@ -16,24 +16,34 @@
           <router-link to="/">页面四</router-link>
         </li>
       </ul>
-      <p>登录</p>
+      <p class="info">
+        <span>
+          欢迎
+          <em ref="name"></em> 登录
+        </span>
+        <span @click="out">退出</span>
+      </p>
     </div>
   </div>
 </template>
 <script>
+import Storages from "../../utils/Storage.js";
 export default {
   components: {},
   props: {},
   data() {
     return {};
   },
-  // 生命周期-实例创建完成后调用
   created() {},
-  // 生命周期-实例挂载后调用
   mounted() {},
-  // 生命周期-实例销毁离开后调用
   destroyed() {},
-  methods: {}
+  methods: {
+    out() {
+      Storages.clearItem();
+      this.$store.state.isLogin = false;
+      this.$router.push({ path: "/login" });
+    }
+  }
 };
 </script>
 
@@ -46,6 +56,11 @@ export default {
   padding: 0 6%;
   box-sizing: border-box;
   margin: 0 auto;
+  .info {
+    span {
+      cursor: pointer;
+    }
+  }
   img {
     display: block;
     width: 80px;

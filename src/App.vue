@@ -1,23 +1,14 @@
 <template>
   <div>
-    <!-- 头部 -->
-    <Header/>
     <!-- 内容 -->
     <router-view/>
-    <Footer/>
-    <!-- 尾部 -->
   </div>
 </template>
 
 <script>
-import Header from "./components/Header/header";
-import Footer from "./components/Footer/footer";
 export default {
   // 可用组件的哈希表
-  components: {
-    Header,
-    Footer
-  },
+  components: {},
   // 接收传值
   props: {},
   // 数据对象
