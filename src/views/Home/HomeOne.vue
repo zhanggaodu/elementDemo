@@ -54,7 +54,7 @@
         <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
       </div>
     </el-dialog>
-    <div style="width:100%;height:400px" id="echarts"></div>
+    <div style="width:880px;height:400px; margin: 30px auto 0;" class="echartsbar" id="echarts"></div>
   </div>
 </template>
 <script>
@@ -140,7 +140,11 @@ export default {
     require("echarts/lib/component/title");
 
     // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById("echarts"));
+    var myChart = echarts.init(document.getElementById("echarts"), {
+      //更改cavans的宽高
+      width: "880px",
+      height: "300px"
+    });
     // 绘制图表
     myChart.setOption({
       title: {
